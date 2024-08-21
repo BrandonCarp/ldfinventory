@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Navbar from "./ui/navbar";
+import LoginForm from "./pages/loginForm/loginForm";
+
 export default function Home() {
   return (
     <main className="flex flex-col ">
       <Navbar />
-      <h1>Home Page</h1>
+      <div className="">
+        <LoginForm />
+      </div>
     </main>
   );
 }
