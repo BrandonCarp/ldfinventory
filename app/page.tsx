@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Navbar from "./ui/navbar";
-import LoginForm from "./pages/loginForm/loginForm";
+import LoginForm from "./loginForm/LoginForm";
 
 export default function Home() {
   return (
