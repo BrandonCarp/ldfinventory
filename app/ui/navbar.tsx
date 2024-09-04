@@ -5,12 +5,17 @@ import ldfLogo from "../ui/images/LDF.webp";
 
 export default function Navbar() {
   return (
-    <nav className=" p-3">
-      <div className="container flex">
-        <Image src={ldfLogo} alt="LDF Logo" width={175} />
-        <Image src={lcpLogo} alt="LCP Logo" width={150} />
-        <Link className="" href="/">Home</Link>
+    <nav className="flex justify-center items-center p-5">
+      {/* Center below div */}
+      <div className=" flex w-full justify-center items-center ">
+        <Image src={ldfLogo} alt="LDF Logo" width={250} />
       </div>
-    </nav >
+      <div className="flex mr-5">
+        <Link className="" href="/">
+          Home
+        </Link>
+        <Image src={lcpLogo} alt="LCP Logo" width={125} />
+      </div>
+    </nav>
   );
 }
