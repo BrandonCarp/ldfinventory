@@ -9,12 +9,13 @@ export default function Navbar() {
       {/* Center below div */}
       <div className=" flex w-full justify-center items-center ">
         <Image src={ldfLogo} alt="LDF Logo" width={250} />
+        <Image src={lcpLogo} alt="LCP Logo" width={100} />
       </div>
       <div className="flex mr-5">
         <Link className="" href="/">
           Home
         </Link>
-        <Image src={lcpLogo} alt="LCP Logo" width={125} />
+        {/* <Image src={lcpLogo} alt="LCP Logo" width={125} /> */}
       </div>
     </nav>
   );
