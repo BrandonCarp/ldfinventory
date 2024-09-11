@@ -2,8 +2,8 @@ import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
-import ldf1 from "../images/1.jpg";
-import ldf2 from "../images/2.jpg";
+import ldf1 from "../images/1.jpeg";
+import ldf2 from "../images/2.jpeg";
 import ldf3 from "../images/3.jpg";
 
 export default function HomeCarousel() {
