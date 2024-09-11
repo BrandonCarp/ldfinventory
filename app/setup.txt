@@ -1,0 +1,2 @@
+Install node command : npm i -g npm@latest 
+Install NEXTUI for table - npm install @nextui-org/table

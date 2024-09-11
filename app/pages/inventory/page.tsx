@@ -8,67 +8,38 @@ import {
 } from "@nextui-org/table";
 
 const rows = [
-  {
-    key: "1",
-    name: "",
-    role: "",
-    status: "",
-  },
-  {
-    key: "1",
-    name: "",
-    role: "",
-    status: "",
-  },
-  {
-    key: "1",
-    name: "",
-    role: "",
-    status: "",
-  },
-  {
-    key: "1",
-    name: "",
-    role: "",
-    status: "",
-  },
+  { key: "1", name: "Part 1", description: "Description 1", quantity: 10 },
+  { key: "2", name: "Part 2", description: "Description 2", quantity: 20 },
+  { key: "3", name: "Part 3", description: "Description 3", quantity: 30 },
+  { key: "4", name: "Part 4", description: "Description 4", quantity: 40 },
 ];
 
 const columns = [
-  {
-    key: "name",
-    label: "Part Name",
-  },
-  {
-    key: "description",
-    label: "Part Description",
-  },
-  {
-    key: "quantity",
-    label: "Quantity",
-  },
+  { key: "name", label: "Part Name" },
+  { key: "description", label: "Part Description" },
+  { key: "quantity", label: "Quantity" },
 ];
 
-const getKeyValue = (item: any, columnKey: number) => {
-  // Example logic: Return the value from the item object based on columnKey
+const getKeyValue = (item: any, columnKey: any) => {
   return item[columnKey] || "Default Value";
 };
+
 const LiveInventory = () => {
   return (
-    <Table aria-label="LDF Live Table">
-      <TableHeader columns={columns}>
-        {(column) => <TableColumn key={column.key}>{column.label}</TableColumn>}
-      </TableHeader>
-      <TableBody items={rows}>
-        {(item) => (
-          <TableRow key={item.key}>
-            {(columnKey: any) => (
-              <TableCell>{getKeyValue(item, columnKey)}</TableCell>
-            )}
-          </TableRow>
-        )}
-      </TableBody>
-    </Table>
+    <Table aria-label="Example table with dynamic content">
+    <TableHeader>
+      {columns.map((column) =>
+        <TableColumn key={column.key}>{column.label}</TableColumn>
+      )}
+    </TableHeader>
+    <TableBody>
+      {rows.map((row) =>
+        <TableRow key={row.key}>
+          {(columnKey) => <TableCell>{getKeyValue(row, columnKey)}</TableCell>}
+        </TableRow>
+      )}
+    </TableBody>
+  </Table>
   );
 };
 
