@@ -24,7 +24,7 @@ export default function HomeCarousel() {
      
          sizes="(max-width: 600px) 100vw, 50vw"
          width={100}
-         height={200}
+         height={100}
         
        />
         ))}

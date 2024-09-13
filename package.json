@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nextui-org/table": "^2.0.39",
+    "@tanstack/react-table": "^8.20.5",
     "embla-carousel": "^8.2.1",
     "embla-carousel-autoplay": "^8.2.0",
     "embla-carousel-react": "^8.2.1",
