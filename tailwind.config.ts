@@ -14,6 +14,13 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    screens: {
+      phone: "550px",
+        tablet: "640px",
+        medTablet: "1000px", // Custom breakpoint for 1000px
+        laptop: "1024px",
+        desktop: "1280px",
+    },
   },
   plugins: [],
 };
