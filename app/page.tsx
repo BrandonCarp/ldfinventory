@@ -12,12 +12,12 @@ export default function Home() {
   return (
     <main className="flex justify-center items-center h-screen bg-black">
       {/* <Navbar /> */}
-      {/* <div className="phone:flex-col tablet:flex-row w-full justify-center items-center text-center space-x-0 space-y-8 tablet:space-y-0 tablet:space-x-8 mx-5"> */}
-      <div className="flex w-full justify-center items-center text-center mx-5 space-x-8 space-y-8 tablet:space-y-0">
-        <div>
-          <section className="flex  items-center  pb-5 ">
-            <Image src={ldfLogo} alt="LDF Logo" width={275} />
-            <Image className="mt-5" src={lcpLogo} alt="LCP Logo" width={125} />
+
+      <div className="container mx-auto my-auto justify-center items-center text-center mx-6 ">
+        <div className="mb-10  mt-[10%]">
+          <section className="flex justify-center items-center  pb-5 ">
+            <Image src={ldfLogo} alt="LDF Logo" width={205} />
+            <Image className="mt-5" src={lcpLogo} alt="LCP Logo" width={90} />
           </section>
           <section className="space-x-5">
             <a className="bg-red-800 text-white py-1 px-3 rounded hover:bg-red-700" href="https://www.lynmardisplaysandfixtures.com/">Learn More</a>
