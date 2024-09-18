@@ -10,9 +10,10 @@ import HomeCarousel from "./ui/emblaCarousel/homeCarousel";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center h-screen bg-black  ">
+    <main className="flex justify-center items-center h-screen bg-black">
       {/* <Navbar /> */}
-      <div className="flex w-full justify-center items-center text-center space-x-8 mx-5 ">
+      {/* <div className="phone:flex-col tablet:flex-row w-full justify-center items-center text-center space-x-0 space-y-8 tablet:space-y-0 tablet:space-x-8 mx-5"> */}
+      <div className="flex w-full justify-center items-center text-center mx-5 space-x-8 space-y-8 tablet:space-y-0">
         <div>
           <section className="flex  items-center  pb-5 ">
             <Image src={ldfLogo} alt="LDF Logo" width={275} />
