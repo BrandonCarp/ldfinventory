@@ -6,7 +6,7 @@ import ldfLogo from "./ui/images/LDF.webp";
 
 import HomeCarousel from "./ui/emblaCarousel/homeCarousel";
 
-
+// BUILD MOBILE FIRST, ADJUST CSS
 
 export default function Home() {
   return (
