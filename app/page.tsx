@@ -10,7 +10,7 @@ import HomeCarousel from "./ui/emblaCarousel/homeCarousel";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center h-screen bg-black">
+    <main className="flex justify-center items-center h-screen bg-black ">
       {/* <Navbar /> */}
 
       <div className="container mx-auto my-auto justify-center items-center text-center mx-6 ">
@@ -26,9 +26,9 @@ export default function Home() {
 
         </div>
 
-        <section className="">
-          <HomeCarousel />
-        </section>
+
+        <HomeCarousel />
+
       </div>
     </main>
   );

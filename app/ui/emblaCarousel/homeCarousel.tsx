@@ -17,8 +17,8 @@ export default function HomeCarousel() {
   const images = [ldf1, ldf2, ldf3, ldf4, ldf5, ldf6, ldf7, ldf9];
 
   return (
-    <div className=" overflow-hidden bg-white  " ref={emblaRef}>
-      <div className="flex  ">
+    <div className="overflow-hidden " ref={emblaRef}>
+      <div className="flex ">
         {images.map((image, index) => (
           <Image
             key={index}
@@ -27,8 +27,8 @@ export default function HomeCarousel() {
             alt={`Slide ${index + 1}`}
 
             sizes="(max-width: 600px) 50vw, 50vw"
-            width={75}
-            height={100}
+            width={50}
+            height={50}
 
           />
         ))}
