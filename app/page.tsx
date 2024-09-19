@@ -27,7 +27,9 @@ export default function Home() {
         </div>
 
 
-        <HomeCarousel />
+<HomeCarousel />
+
+        
 
       </div>
     </main>
