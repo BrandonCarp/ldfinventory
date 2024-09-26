@@ -26,9 +26,9 @@ export default function HomeCarousel() {
             src={image}
             alt={`Slide ${index + 1}`}
 
-            sizes="(max-width: 600px) 50vw, 50vw"
-            width={50}
-            height={50}
+            sizes="(max-width: 300px) 25vw, 25vw"
+            // width={50}
+            // height={50}
 
           />
         ))}
@@ -36,5 +36,3 @@ export default function HomeCarousel() {
     </div>
   );
 }
-
-// ç
