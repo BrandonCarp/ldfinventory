@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,13 +14,22 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-    },
-    screens: {
-      phone: "550px",
+      // sm: 640px, md:768px, lg:1024px, xl 1280px, 2xl: 1536px
+      screens: {
+        w320: "320px",
+        w380: "380px",
+        w400: "380px",
+        w500: "500px",
+
         tablet: "640px",
-        medTablet: "1000px", // Custom breakpoint for 1000px
+        // => @media (min-width: 640px) { ... }
+
         laptop: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
         desktop: "1280px",
+        // => @media (min-width: 1280px) { ... }
+      },
     },
   },
   plugins: [],

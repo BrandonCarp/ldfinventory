@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex justify-center items-center h-screen bg-black ">
       {/* <Navbar /> */}
 
-      <div className="container mx-auto my-auto justify-center items-center text-center mx-6 ">
+      <div className="container mx-auto my-auto justify-center items-center text-center mx-6 w500:flex">
         <div className="mb-10  mt-[10%]">
           <section className="flex justify-center items-center  pb-5 ">
             <Image src={ldfLogo} alt="LDF Logo" width={205} />

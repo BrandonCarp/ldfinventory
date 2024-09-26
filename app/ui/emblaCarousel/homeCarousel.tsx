@@ -17,7 +17,7 @@ export default function HomeCarousel() {
   const images = [ldf1, ldf2, ldf3, ldf4, ldf5, ldf6, ldf7, ldf9];
 
   return (
-    <div className="overflow-hidden " ref={emblaRef}>
+    <div className="overflow-hidden" ref={emblaRef}>
       <div className="flex ">
         {images.map((image, index) => (
           <Image
