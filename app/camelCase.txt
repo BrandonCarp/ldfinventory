@@ -1,0 +1,45 @@
+Certainly! Here’s the code again, followed by a detailed explanation:
+
+python
+Copy code
+def first_capital_index(s):
+    return next((i for i, char in enumerate(s) if char.isupper()), -1)
+
+# Example usage
+text = "helloWorld"
+index = first_capital_index(text)
+print(index)  # Output: 5
+Explanation
+1. Function Definition
+python
+Copy code
+def first_capital_index(s):
+This line defines a function named first_capital_index that takes one parameter s, which is expected to be a string.
+2. Using next with a Generator Expression
+python
+Copy code
+return next((i for i, char in enumerate(s) if char.isupper()), -1)
+enumerate(s):
+
+This function generates pairs of indices and characters from the string s. For example, if s is "helloWorld", it produces (0, 'h'), (1, 'e'), (2, 'l'), (3, 'l'), (4, 'o'), (5, 'W'), (6, 'o'), (7, 'r'), (8, 'l'), (9, 'd').
+Generator Expression:
+
+The expression (i for i, char in enumerate(s) if char.isupper()) iterates through each index (i) and character (char).
+It filters the results to yield only the indices where the corresponding character is uppercase. In our example, it would yield 5 because 'W' is the first uppercase letter at that index.
+next(...):
+
+The next function retrieves the first value produced by the generator expression. If an uppercase letter is found, it returns the corresponding index.
+If there are no uppercase letters, it returns -1, which is the default value specified.
+3. Example Usage
+python
+Copy code
+text = "helloWorld"
+index = first_capital_index(text)
+Here, the string "helloWorld" is passed to the first_capital_index function. The function searches for the first uppercase letter.
+4. Output
+python
+Copy code
+print(index)  # Output: 5
+The result is printed, which in this case is 5, the index of the first capital letter 'W' in the string.
+Summary
+This function efficiently finds the index of the first uppercase letter in a given string. It uses enumerate to track indices, a generator expression to filter for uppercase letters, and next to return the first match or -1 if none are found.
